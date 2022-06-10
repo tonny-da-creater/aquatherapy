@@ -1,0 +1,12 @@
+.btn {
+  font-family: $proxima-nova-font;
+  font-weight: $font-weight-semibold;
+  padding: 9px 15px;
+  border-radius: 3px;
+  white-space: nowrap;
+
+  &--primary {
+    color: $white-color;
+    background-color: $blue-color;
+  }
+}

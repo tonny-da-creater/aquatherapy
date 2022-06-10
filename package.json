@@ -3,9 +3,9 @@
   "description": "Лендинг акватерапии",
   "devDependencies": {
     "autoprefixer": "10.4.0",
-    "browser-sync": "2.27.7",
+    "browser-sync": "^2.27.10",
     "del": "^6.1.0",
-    "gulp": "4.0.2",
+    "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-libsquoosh": "^1.1.2",

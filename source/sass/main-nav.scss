@@ -1,0 +1,12 @@
+.main-nav {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+  align-items: center;
+  grid-column-gap: 50px;
+}
+
+.main-nav--border-bottom {
+  border-bottom: 1px solid $white-color-opacity;
+  padding: 30px 0;
+}
