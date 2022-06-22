@@ -1,0 +1,52 @@
+.sessions-card-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 258px);
+  grid-auto-rows: 258px;
+  grid-gap: 24px;
+
+  @media all and (max-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.sessions-card-block__item {
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/women-under-water.jpg') no-repeat center / cover;
+  text-align: left;
+  display: flex;
+  align-items: end;
+  padding-bottom: 30px;
+  padding-left: 40px;
+
+  &--grid-row {
+    grid-row: span 2;
+    position: relative;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 7px;
+      bottom: 0;
+      left: 0;
+      background-color: $blue-color;
+      border-radius: 0px 0px 10px 10px;
+    }
+
+    @media all and (max-width: $tablet) {
+      grid-row: auto;
+      grid-column: span 2;
+    }
+  }
+}
+
+.sessions-card-block__title {
+  font-family: $el-messiri-font;
+  font-weight: $font-weight-bold;
+  color: $white-color;
+  font-size: 24px;
+  line-height: 34px;
+}

@@ -1,0 +1,33 @@
+.title {
+  position: relative;
+  color: $white-color;
+  font-family: $el-messiri-font;
+  font-weight: $font-weight-bold;
+  font-size: 42px;
+  line-height: 59px;
+  display: inline-block;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 28px;
+      height: 14px;
+      background-color: $blue-color;
+      border-radius: 0px 50px;
+      top: 50%;
+      left: -94px;
+      transform: translateY(-50%);
+    }
+
+   &::after {
+      position: absolute;
+      content: "";
+      width: 28px;
+      height: 14px;
+      background-color: $blue-color;
+      border-radius: 50px 0px;
+      top: 50%;
+      right: -94px;
+      transform: translateY(-50%);
+   }
+}
