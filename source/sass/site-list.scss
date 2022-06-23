@@ -5,12 +5,27 @@
   display: flex;
   flex-wrap: wrap;
   justify-self: center;
+
+  @media all and (max-width: $mobile) {
+    position: relative;
+    // top: 121px;
+    width: 100%;
+    text-align: center;
+    background: #306a6a;
+    // z-index: 1;
+    flex-direction: column;
+  }
 }
 
 .site-list__item {
   margin-right: 50px;
 
-  &:last-child {
+  @media all and (max-width: $mobile) {
+    margin-right: 0;
+    padding: 29px;
+  }
+
+  &:nth-last-child(-n+2) {
     margin-right: 0;
   }
 }
@@ -22,4 +37,24 @@
   font-weight: $font-weight-regular;
   display: block;
   line-height: 19px;
+  padding: 5px 0;
+
+  @media all and (max-width: $mobile) {
+    font-size: 30px;
+  }
 }
+
+.site-list__item-btn {
+  display: none;
+
+  @media all and (max-width: $mobile) {
+    display: block;
+    border-top: 1px solid gray;
+    padding: 55px 0;
+  }
+}
+
+  .site-list__btn {
+    font-size: 30px !important;
+  }
+

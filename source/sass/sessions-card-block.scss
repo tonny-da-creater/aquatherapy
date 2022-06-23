@@ -8,6 +8,10 @@
   @media all and (max-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media all and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .sessions-card-block__item {
@@ -36,9 +40,9 @@
       border-radius: 0px 0px 10px 10px;
     }
 
-    @media all and (max-width: $tablet) {
+    @media all and (max-width: $mobile) {
       grid-row: auto;
-      grid-column: span 2;
+      grid-row: auto;
     }
   }
 }

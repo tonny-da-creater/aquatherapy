@@ -21,3 +21,12 @@ h5,
 h5 {
   margin: 0;
 }
+
+.visualy-hidden {
+  font-size: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  padding: 0;
+}

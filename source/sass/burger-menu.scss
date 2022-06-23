@@ -1,0 +1,23 @@
+.burger-menu {
+  display: none;
+
+  @media all and (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+    width: 50px;
+  }
+}
+
+.burger-menu__item {
+  display: none;
+
+  @media all and (max-width: $mobile) {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: $white-color;
+  }
+}
+

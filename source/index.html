@@ -9,11 +9,11 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="main-header__container">
-      <nav class="main-nav main-nav--wrapper">
+    <nav class="main-nav">
+      <div class="main-nav__container">
         <a class="main-nav__link-logo" href="index.html">
           <picture>
-            <img class="main-nav__logo" src="img/logo.svg" alt="Логотип">
+            <img class="main-nav__logo" src="img/logo.svg" height="60" width="60" alt="Логотип">
           </picture>
         </a>
         <ul class="main-nav__site-list site-list">
@@ -24,13 +24,19 @@
           <li class="site-list__item"><a href="#" class="site-list__link">Новости</a></li>
           <li class="site-list__item"><a href="#" class="site-list__link">Обо мне</a></li>
           <li class="site-list__item"><a href="#" class="site-list__link">Блог</a></li>
+          <li class="site-list__item site-list__item-btn"><a href="#" class="site-list__btn btn btn--primary">Записаться на сеанс</a></li>
         </ul>
         <a href="#" class="main-nav__btn btn btn--primary">Записаться на сеанс</a>
-      </nav>
-      <div class="main-header__bg-hero">
-        <h2 class="main-header__title">Укрепление здоровья</h2>
-        <h1 class="main-header__main-title">Акватерапия <br> RitmStyle</h1>
+        <div class="main-nav__burger-menu burger-menu">
+          <span class="burger-menu__item"></span>
+          <span class="burger-menu__item"></span>
+          <span class="burger-menu__item"></span>
+        </div>
       </div>
+    </nav>
+    <div class="main-header__bg-hero">
+      <h2 class="main-header__title">Укрепление здоровья</h2>
+      <h1 class="main-header__main-title">Акватерапия <br> RitmStyle</h1>
     </div>
   </header>
   <section class="sessions">
