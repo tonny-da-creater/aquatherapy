@@ -15,8 +15,12 @@
       background-color: $blue-color;
       border-radius: 0px 50px;
       top: 50%;
-      left: -94px;
+      left: -72px;
       transform: translateY(-50%);
+
+      @media all and (max-width: $mobile) {
+        display: none;
+      }
     }
 
    &::after {
@@ -27,7 +31,11 @@
       background-color: $blue-color;
       border-radius: 50px 0px;
       top: 50%;
-      right: -94px;
+      right: -72px;
       transform: translateY(-50%);
+
+      @media all and (max-width: $mobile) {
+        display: none;
+      }
    }
 }
