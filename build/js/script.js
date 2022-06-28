@@ -1,1 +1,1 @@
-$(".carousel").slick({dots:!0,slidesToShow:3,slidesToScroll:3,centerMode:!0});
+$(".carousel").slick({dots:!0,centerMode:!0,slidesToShow:3,arrows:!1});

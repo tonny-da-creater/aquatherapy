@@ -1,13 +1,62 @@
-.slick-arrow {
-  display: none;
-}
-
 .carousel__item {
   text-align: left;
-  // padding: 50px 60px 56px;
+  padding: 40px 45px 71px;
   background-color: $blue-color;
+  // margin: 0 25px;
+  border-radius: 10px;
+  opacity: 0.5;
+
+  // &:last-child {
+  //   margin-left: 0;
+  // }
+}
+
+.carousel__bit-quote {
+  margin: 0 0 10px;
+  display: inline-block;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.carousel__author {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: $font-weight-bold;
+  font-family: $proxima-nova-font;
+  color: $white-color;
+  font-style: normal;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .carousel__quote {
+  color: $white-color;
+  font-size: 10px;
+  font-weight: $font-weight-light;
+  line-height: 14px;
+  font-family: $proxima-nova-font;
   margin: 0;
+}
+
+.carousel__item.slick-current {
+  opacity: 1;
+  // margin: 0 50px;
+}
+
+.carousel__item.slick-current .carousel__author {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.carousel__item.slick-current .carousel__quote {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

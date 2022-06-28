@@ -1,7 +1,8 @@
 $(".carousel").slick({
   dots: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
   centerMode: true,
-  // centerPadding: '60px',
+  // centerPadding: false,
+  slidesToShow: 3,
+  arrows: false,
+  // slidesToScroll: 3
 });
