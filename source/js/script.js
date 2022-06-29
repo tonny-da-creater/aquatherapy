@@ -1,7 +1,7 @@
 $(".carousel").slick({
   dots: true,
   centerMode: true,
-  // centerPadding: false,
+  centerPadding: false,
   slidesToShow: 3,
   arrows: false,
   // slidesToScroll: 3
