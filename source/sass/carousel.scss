@@ -70,3 +70,39 @@
   display: flex;
   align-items: center;
 }
+
+.slick-dots {
+  margin-top: 60px;
+  position: static;
+}
+
+.slick-dots li {
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+  margin-left: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+li.slick-active button::before {
+  opacity: 1 !important;
+}
+
+.slick-dots button {
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+
+  &::before {
+    content: "" !important;
+    background-color: $white-color;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 3px;
+    opacity: 0.4 !important;
+  }
+}
