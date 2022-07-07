@@ -13,15 +13,15 @@
   align-items: center;
   grid-column-gap: 50px;
 
-  // @media all and (max-width: $mobile) {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   background-color: $black-color;
-  //   padding: 30px;
-  //   grid-template-columns: min-content auto;
-  // }
+  @media all and (max-width: $mobile) {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // background-color: $black-color;
+    // padding: 30px;
+    grid-template-columns: min-content auto;
+  }
 }
 
 .main-nav__link-logo {

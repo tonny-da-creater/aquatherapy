@@ -7,10 +7,7 @@
   border-radius: 10px;
   opacity: 0.5;
   box-sizing: border-box;
-}
-
-.carousel__item.slick-active {
-  width: 500px !important;
+  width: 500px;
 }
 
 .carousel__bit-quote {
@@ -44,7 +41,7 @@
 
 .carousel__item.slick-current {
   opacity: 1;
-  width: 636px !important;
+  width: 636px;
   padding: 50px 60px 56px 60px;
 }
 
@@ -69,6 +66,7 @@
 .slick-track {
   display: flex;
   align-items: center;
+  // transition: all 0.5s ease;
 }
 
 .slick-dots {

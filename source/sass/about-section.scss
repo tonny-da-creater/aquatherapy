@@ -1,0 +1,78 @@
+.about-section {
+  padding-top: 124px;
+}
+
+.about-section__container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1076px;
+  padding: 0 30px;
+}
+
+.about-section__title {
+  margin-bottom: 99px;
+}
+
+.about-section__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 84px;
+  align-items: center;
+  margin-bottom: 99px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media all and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-section__img {
+  width: 526px;
+  height: 365px;
+  border-radius: 10px;
+  object-fit: cover;
+
+  @media all and (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.about-section__card:last-of-type .about-section__img {
+  height: 400px;
+}
+
+.about-section__card:first-of-type .about-section__card-content {
+  order: -1;
+
+  @media all and (max-width: $mobile) {
+    order: 0;
+  }
+}
+
+.about-section__card-content {
+  text-align: left;
+  max-width: 466px;
+}
+
+.about-section__title-card-content {
+  font-family: $proxima-nova-font;
+  color: $white-color;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about-description-card-content {
+  font-family: $proxima-nova-font;
+  font-weight: $font-weight-light;
+  font-size: 16px;
+  color: $white-color;
+  line-height: 22px;
+}
+
+
