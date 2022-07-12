@@ -8,6 +8,10 @@
   opacity: 0.5;
   box-sizing: border-box;
   width: 500px;
+
+  @media all and (max-width: $mobile) {
+    padding: 25px 20px 25px;
+  }
 }
 
 .carousel__bit-quote {
@@ -43,6 +47,10 @@
   opacity: 1;
   width: 636px;
   padding: 50px 60px 56px 60px;
+
+  // @media all and (max-width: $mobile) {
+  //   padding: 25px 20px 25px;
+  // }
 }
 
 .carousel__item.slick-current .carousel__author {

@@ -11,6 +11,10 @@
 
 .about-section__title {
   margin-bottom: 99px;
+
+  @media all and (max-width: $mobile) {
+    margin-bottom: 50px;
+  }
 }
 
 .about-section__card {
@@ -24,24 +28,36 @@
     margin-bottom: 0;
   }
 
+  @media all and (max-width: $tablet) {
+    grid-column-gap: 50px;
+  }
+
   @media all and (max-width: $mobile) {
     grid-template-columns: 1fr;
+    margin-bottom: 60px;
   }
 }
 
 .about-section__img {
-  width: 526px;
+  width: 100%;
   height: 365px;
   border-radius: 10px;
   object-fit: cover;
 
+
   @media all and (max-width: $mobile) {
     width: 100%;
+    margin-bottom: 30px;
+    height: 235px;
   }
 }
 
 .about-section__card:last-of-type .about-section__img {
   height: 400px;
+
+  @media all and (max-width: $mobile) {
+    height: 235px;
+  }
 }
 
 .about-section__card:first-of-type .about-section__card-content {
@@ -55,6 +71,10 @@
 .about-section__card-content {
   text-align: left;
   max-width: 466px;
+
+  @media all and (max-width: $mobile) {
+    max-width: 100%;
+  }
 }
 
 .about-section__title-card-content {

@@ -12,7 +12,8 @@ $(".carousel").slick({
       breakpoint: 1200,
       settings: {
         slidesToShow: 1,
-        // variableWidth: false,
+        variableWidth: false,
+
       }
     }
   ]

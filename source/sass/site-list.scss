@@ -1,10 +1,12 @@
 .site-list {
   padding: 0;
   margin: 0;
+  left: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-self: center;
+  min-width: 320px;
 
   @media all and (max-width: $mobile) {
     position: absolute;
@@ -14,6 +16,7 @@
     background: #306a6a;
     z-index: 1;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -22,8 +25,7 @@
 
   @media all and (max-width: $mobile) {
     margin-right: 0;
-    padding: 29px;
-    padding-left: 40px;
+    padding: 35px 0;
   }
 
   &:nth-last-child(-n+2) {
@@ -41,7 +43,8 @@
   padding: 5px 0;
 
   @media all and (max-width: $mobile) {
-    font-size: 30px;
+    font-size: 25px;
+    padding: 0;
   }
 }
 
@@ -51,12 +54,11 @@
   @media all and (max-width: $mobile) {
     display: block;
     border-top: 1px solid gray;
-    padding: 55px 0;
-    padding-left: 40px;
+    padding: 40px 0;
   }
 }
 
   .site-list__btn {
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 
