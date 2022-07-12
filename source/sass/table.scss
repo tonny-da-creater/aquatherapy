@@ -1,0 +1,21 @@
+.table {
+  text-align: left;
+}
+
+.table__cell-title {
+  width: 268px;
+  font-weight: $font-weight-regular;
+  font-size: 18px;
+  line-height: 25px;
+  font-style: $proxima-nova-font;
+  color: $white-color;
+}
+
+.table__cell {
+  color: $white-color;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: $font-weight-bold;
+  font-family: $el-messiri-font;
+  text-align: right;
+}
