@@ -19,7 +19,7 @@
 
 .about-section__card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-column-gap: 84px;
   align-items: center;
   margin-bottom: 99px;

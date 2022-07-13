@@ -1,14 +1,31 @@
 .table {
   text-align: left;
+  width: 100%;
+}
+
+.table__row {
+  vertical-align: baseline;
 }
 
 .table__cell-title {
-  width: 268px;
   font-weight: $font-weight-regular;
   font-size: 18px;
   line-height: 25px;
-  font-style: $proxima-nova-font;
+  font-family: $proxima-nova-font;
   color: $white-color;
+  padding-left: 37px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 9px;
+    background-color: $blue-color;
+    top: 9px;
+    left: 0;
+    border-radius: 0px 50px;
+  }
 }
 
 .table__cell {
@@ -18,4 +35,13 @@
   font-weight: $font-weight-bold;
   font-family: $el-messiri-font;
   text-align: right;
+}
+
+.table__cell-title {
+  padding-bottom: 31px;
+  padding-right: 35px;
+}
+
+.table__row:last-child .table__cell-title {
+  padding-bottom: 0;
 }
