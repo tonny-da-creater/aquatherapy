@@ -161,14 +161,60 @@
     </div>
   </section>
   <section class="contacts">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.642305218488!2d30.319410674088726!3d59.91236434562001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696305775a88829%3A0xe98b88078194f04!2z0J7QotCfINCR0LDQvdC6!5e0!3m2!1sru!2sru!4v1657713270829!5m2!1sru!2sru" width="856" height="604" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="contacts__block contacts-block">
-      <h3 class="contacts-block__title">Бассейн WorkClass</h3>
-      <ul class="contacts-block__list">
-        li.
-      </ul>
+    <div class="contacts__container">
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.642305218488!2d30.319410674088726!3d59.91236434562001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696305775a88829%3A0xe98b88078194f04!2z0J7QotCfINCR0LDQvdC6!5e0!3m2!1sru!2sru!4v1657713270829!5m2!1sru!2sru" width="856" height="604" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="contacts__block contacts-block">
+        <h3 class="contacts-block__title">Бассейн WorkClass</h3>
+        <address class="contacts-block__address">
+          <svg class="contacts-block__address-svg" width="20" height="20">
+            <use xlink:href="./img/sprite.svg#location-icon"></use>
+          </svg>
+          Невский 140
+        </address>
+        <address class="contacts-block__address">
+          <svg class="contacts-block__address-svg" width="20" height="16">
+            <use xlink:href="./img/sprite.svg#subway-icon"></use>
+          </svg>
+          м. Спасская
+        </address>
+        <span class="contacts-block__record">
+          <svg class="contacts-block__address-svg" width="20" height="20">
+            <use xlink:href="./img/sprite.svg#calendar-icon"></use>
+          </svg>
+          Запись по договоренности
+        </span>
+        <a class="contacts-block__link btn" href="#">Записаться на сеанс</a>
+      </div>
+      <div class="contacts__block contacts-block">
+        <h3 class="contacts-block__title">Бассейн "На Гороховой"</h3>
+        <address class="contacts-block__address">
+          <svg class="contacts-block__address-svg" width="20" height="20">
+            <use xlink:href="./img/sprite.svg#location-icon"></use>
+          </svg>
+          3-й проезд Иванова
+        </address>
+        <address class="contacts-block__address">
+          <svg class="contacts-block__address-svg" width="20" height="16">
+            <use xlink:href="./img/sprite.svg#subway-icon"></use>
+          </svg>
+          м. Крестовский остров
+        </address>
+        <span class="contacts-block__record">
+          <svg class="contacts-block__address-svg" width="20" height="20">
+            <use xlink:href="./img/sprite.svg#calendar-icon"></use>
+          </svg>
+          Запись по договоренности
+        </span>
+        <a class="contacts-block__link btn" href="#">Записаться на сеанс</a>
+      </div>
     </div>
   </section>
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <p class="main-footer__copyright">©<time class="copyright__time">2018-2022</time>RitmStyle</p>
+      <address class="main-footer__author">Сделано d-e-n.info</address>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>

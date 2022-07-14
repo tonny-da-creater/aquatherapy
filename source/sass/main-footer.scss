@@ -1,0 +1,30 @@
+.main-footer {
+  padding: 30px 0;
+}
+
+.main-footer__container {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1296px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-footer__copyright, .main-footer__author {
+  margin: 0;
+  color: $white-color;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: $font-weight-regular;
+  font-family: $proxima-nova-font;
+}
+
+.main-footer__author {
+  color: $white-color;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-family: $proxima-nova-font;
+}

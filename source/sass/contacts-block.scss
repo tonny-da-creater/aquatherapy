@@ -1,0 +1,49 @@
+.contacts-block {
+  background-color: $blue-color;
+  padding: 35px 45px;
+  border-radius: 10px;
+
+  @media all and (max-width: $mobile) {
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts-block__title {
+  color: $white-color;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: $font-weight-bold;
+  font-family: $el-messiri-font;
+  margin-bottom: 20px;
+}
+
+.contacts-block__address, .contacts-block__record {
+  display: flex;
+  align-items: center;
+  color: $white-color;
+  font-weight: $font-weight-regular;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: $proxima-nova-font;
+  font-style: normal;
+}
+
+.contacts-block__address {
+  margin-bottom: 21px;
+}
+
+.contacts-block__record {
+  margin-bottom: 40px;
+}
+
+.contacts-block__address-svg {
+  margin-right: 20px;
+}
+
+.contacts-block__link {
+  background-color: $white-color;
+  color: $blue-color;
+}
