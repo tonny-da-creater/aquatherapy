@@ -18,6 +18,10 @@
   font-weight: $font-weight-bold;
   font-family: $el-messiri-font;
   margin-bottom: 20px;
+
+  @media all and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .contacts-block__address, .contacts-block__record {

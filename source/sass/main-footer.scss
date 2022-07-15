@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main-footer__copyright, .main-footer__author {
@@ -20,6 +21,10 @@
   font-family: $proxima-nova-font;
 }
 
+.main-footer__copyright {
+  margin-right: 55px;
+}
+
 .main-footer__author {
   color: $white-color;
   font-size: 14px;
@@ -27,4 +32,8 @@
   font-weight: $font-weight-bold;
   font-style: normal;
   font-family: $proxima-nova-font;
+}
+
+.main-footer__time {
+  margin: 0 3px;
 }
