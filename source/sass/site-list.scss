@@ -8,16 +8,16 @@
   justify-self: center;
   min-width: 320px;
 
-  @media all and (max-width: $mobile) {
-    position: absolute;
-    top: 120px;
-    width: 100%;
-    text-align: left;
-    background: #306a6a;
-    z-index: 1;
-    flex-direction: column;
-    align-items: center;
-  }
+  // @media all and (max-width: $mobile) {
+  //   position: absolute;
+  //   top: 120px;
+  //   width: 100%;
+  //   text-align: left;
+  //   background: #306a6a;
+  //   z-index: 1;
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
 }
 
 .site-list__item {

@@ -1,3 +1,5 @@
+// настройки для слайдера - начало
+
 $(".carousel").slick({
   dots: true,
   centerMode: true,
@@ -18,3 +20,12 @@ $(".carousel").slick({
     }
   ]
 });
+
+// настройки для слайдера - конец
+
+// состояние меню при отключённом js - начало
+
+let navMainContainer = document.querySelector('.main-nav__container');
+navMainContainer.classList.remove('main-nav__container--nojs');
+
+// состояние меню при отключённом js - конец
