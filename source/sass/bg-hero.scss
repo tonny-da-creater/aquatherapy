@@ -1,5 +1,9 @@
 .bg-hero {
-  padding: 0 30px;
+  padding: 20px 30px 0 30px;
+
+  @media all and (max-width: $mobile) {
+    padding: 150px 30px 0 30px;
+  }
 }
 
 .bg-hero__container {

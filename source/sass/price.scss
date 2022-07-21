@@ -1,6 +1,10 @@
 .price {
   padding-top: 140px;
   text-align: center;
+
+  @media all and (max-width: $mobile) {
+    padding-top: 70px;
+  }
 }
 
 .price__container {
@@ -11,10 +15,18 @@
   grid-template-columns: 1fr auto;
   grid-column-gap: 134px;
   align-items: center;
-  padding-top: 100px;
 
   @media all and (max-width: $mobile) {
     grid-template-columns: 1fr;
+  }
+}
+
+.price__title {
+  margin-bottom: 100px;
+
+  @media all and (max-width: $mobile) {
+    margin-bottom: 35px;
+    padding: 0 30px;
   }
 }
 

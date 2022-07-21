@@ -1,5 +1,9 @@
 .reviews {
   padding-top: 150px;
+
+  @media all and (max-width: $mobile) {
+    padding-top: 70px;
+  }
 }
 
 .reviews__container {
@@ -11,4 +15,8 @@
 
 .reviews__title {
   margin-bottom: 98px;
+
+  @media all and (max-width: $mobile) {
+    margin-bottom: 60px;
+  }
 }

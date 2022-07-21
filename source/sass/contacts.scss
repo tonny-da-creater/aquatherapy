@@ -1,6 +1,11 @@
 .contacts {
   padding-top: 150px;
   padding-bottom: 60px;
+
+  @media all and (max-width: $mobile) {
+    padding-top: 100px;
+    padding-bottom: 45px;
+  }
 }
 
 .contacts__container {

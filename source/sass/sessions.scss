@@ -1,5 +1,9 @@
 .sessions {
   padding-top: 150px;
+
+  @media all and (max-width: $mobile) {
+    padding-top: 70px;
+  }
 }
 
 .sessions__container {
@@ -11,4 +15,8 @@
 
 .sessions__title {
   margin-bottom: 100px;
+
+  @media all and (max-width: $mobile) {
+    margin-bottom: 60px;
+  }
 }

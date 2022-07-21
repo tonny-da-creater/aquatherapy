@@ -9,6 +9,12 @@ body {
   min-width: 320px;
 }
 
+@media all and (max-width: $mobile) {
+  .lock {
+    overflow: hidden;
+  }
+}
+
 a {
   text-decoration: none;
 }

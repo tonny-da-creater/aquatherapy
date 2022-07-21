@@ -1,5 +1,9 @@
 .about-section {
   padding-top: 124px;
+
+  @media all and (max-width: $mobile) {
+    padding-top: 70px;
+  }
 }
 
 .about-section__container {
@@ -13,7 +17,7 @@
   margin-bottom: 99px;
 
   @media all and (max-width: $mobile) {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 }
 
