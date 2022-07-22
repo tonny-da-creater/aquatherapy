@@ -1,0 +1,35 @@
+.news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(216px, 416px));
+  justify-content: center;
+  grid-template-rows: auto auto;
+  grid-gap: 24px;
+}
+
+.news__item {
+  padding: 30px 0 30px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  min-height: 258px;
+  box-sizing: border-box;
+  background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/women-under-water.jpg') no-repeat center / cover;
+  border-radius: 10px;
+
+  @media all and (max-width: $mobile) {
+    padding-left: 12px;
+  }
+}
+
+.news__time {
+  align-self: flex-start;
+}
+
+.news__description {
+  color: $white-color;
+  font-size: 21px;
+  line-height: 29px;
+  font-family: $el-messiri-font;
+  font-weight: $font-weight-bold;
+}

@@ -1,0 +1,24 @@
+.blog-section {
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  @media all and (max-width: $mobile) {
+    padding-top: 120px;
+    padding-bottom: 70px;
+  }
+}
+
+.blog-section__container {
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+  max-width: 1298px;
+}
+
+.blog-section__title {
+  margin-bottom: 60px;
+
+  @media all and (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
+}
