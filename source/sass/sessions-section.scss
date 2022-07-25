@@ -1,14 +1,33 @@
 .sessions-section {
   padding-top: 60px;
+  padding-bottom: 161px;
+  text-align: center;
+
+  @media all and (max-width: $mobile) {
+    padding-top: 120px;
+    padding-bottom: 70px;
+  }
 }
 
 .sessions-section__container {
-  text-align: center;
   margin: 0 auto;
   padding: 0 30px;
   max-width: 1296px;
+  display: grid;
+  grid-template-columns: 526px 1fr;
+  grid-column-gap: 134px;
+  grid-row-gap: 50px;
+  align-items: center;
+
+  @media all and (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .sessions-section__title {
   margin-bottom: 60px;
+
+  @media all and (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
 }

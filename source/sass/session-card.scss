@@ -1,3 +1,54 @@
 .session-card {
   text-align: left;
 }
+
+.session-card__title {
+  margin-bottom: 60px;
+}
+
+.session-card__time {
+  display: inline-block;
+  margin-bottom: 45px;
+
+  @media all and (max-width: $mobile) {
+    margin-bottom: 35px;
+  }
+}
+
+.session-card__title {
+  color: $white-color;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: $font-weight-bold;
+  font-family: $el-messiri-font;
+  margin-bottom: 30px;
+
+  @media all and (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.session-card__text {
+  font-family: $proxima-nova-font;
+  color: $white-color;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: $font-weight-light;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.session-card__img {
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 100%;
+
+  @media all and (max-width: $mobile) {
+    height: 280px;
+    width: 100%;
+  }
+}
