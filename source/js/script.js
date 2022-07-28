@@ -6,14 +6,19 @@ $(".carousel").slick({
   slidesToShow: 3,
   arrows: false,
   slidesToScroll: 1,
-  variableWidth: true,
   focusOnSelect: true,
   responsive: [
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 1,
-        variableWidth: false,
+        slidesToShow: 2,
+        centerMode: false,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
       }
     }
   ]

@@ -11,10 +11,14 @@
   max-width: 1736px;
   margin: 0 auto;
   padding: 0 60px;
+
+  @media all and (max-width: $tablet) {
+    padding: 0 20px;
+  }
 }
 
 .reviews__title {
-  margin-bottom: 98px;
+  margin-bottom: 90px;
 
   @media all and (max-width: $mobile) {
     margin-bottom: 60px;

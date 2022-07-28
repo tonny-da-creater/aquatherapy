@@ -1,17 +1,32 @@
 .carousel__item {
   text-align: left;
-  padding: 40px 45px 71px 45px;
   background-color: $blue-color;
-  margin: 0 25px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  opacity: 0.5;
   box-sizing: border-box;
-  width: 500px;
+  width: 636px;
+  padding: 50px 60px 56px 60px;
+  transform: scale(.85,.7);
+  opacity: 0.4;
+
+  @media all and (max-width: $tablet) {
+    padding: 30px 22px 37px;
+  }
 
   @media all and (max-width: $mobile) {
     padding: 25px 20px 25px;
   }
+}
+
+@media all and (min-width: $tablet) {
+  .carousel__item.slick-current {
+    width: 636px !important;
+  }
+}
+
+.carousel__item.slick-current {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .carousel__bit-quote {
@@ -24,51 +39,23 @@
 }
 
 .carousel__author {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 28px;
   font-weight: $font-weight-bold;
   font-family: $proxima-nova-font;
   color: $white-color;
   font-style: normal;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .carousel__quote {
   color: $white-color;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: $font-weight-light;
-  line-height: 14px;
+  line-height: 20px;
   font-family: $proxima-nova-font;
   margin: 0;
-}
-
-.carousel__item.slick-current {
-  opacity: 1;
-  width: 636px;
-  padding: 50px 60px 56px 60px;
-
-  // @media all and (max-width: $mobile) {
-  //   padding: 25px 20px 25px;
-  // }
-}
-
-.carousel__item.slick-current .carousel__author {
-  margin-bottom: 20px;
-}
-
-.carousel__item.slick-current .carousel__author {
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.carousel__item.slick-current .carousel__quote {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.slick-list {
-  margin: 0 -25px;
 }
 
 .slick-track {
@@ -78,7 +65,7 @@
 }
 
 .slick-dots {
-  margin-top: 60px;
+  margin-top: 43px;
   position: static;
 }
 
