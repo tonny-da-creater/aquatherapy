@@ -18,9 +18,26 @@
   min-height: 600px;
   box-sizing: border-box;
 
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(0deg, $blue-color-half-opacity, $blue-color-half-opacity), url('../img/entry-img@2x.jpg') no-repeat center / cover;
+  }
+
+  @media all and (max-width: $tablet) {
+    background: linear-gradient(0deg, $blue-color-half-opacity, $blue-color-half-opacity), url('../img/entry-img-tablet.jpg') no-repeat center / cover;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(0deg, $blue-color-half-opacity, $blue-color-half-opacity), url('../img/entry-img-tablet@2x.jpg') no-repeat center / cover;
+    }
+  }
+
   @media all and (max-width: $mobile) {
     min-height: 370px;
     padding-top: 95px;
+    background: linear-gradient(0deg, $blue-color-half-opacity, $blue-color-half-opacity), url('../img/entry-img-mobile.jpg') no-repeat center / cover;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(0deg, $blue-color-half-opacity, $blue-color-half-opacity), url('../img/entry-img-mobile@2x.jpg') no-repeat center / cover;
+    }
   }
 }
 

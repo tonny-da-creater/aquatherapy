@@ -16,7 +16,7 @@
 
 .sessions-card-block__item {
   border-radius: 10px;
-  background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/women-under-water.jpg') no-repeat center / cover;
+  background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/woman-under-water.jpg') no-repeat center / cover;
   text-align: left;
   display: flex;
   align-items: end;
@@ -46,8 +46,17 @@
     }
   }
 
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/woman-under-water@2x.jpg') no-repeat center / cover;
+  }
+
   @media all and (max-width: $mobile) {
     padding: 10px 20px;
+    background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/woman-under-water-mobile.jpg') no-repeat center / cover;
+
+      @media (min-resolution: 2dppx) {
+        background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/woman-under-water-mobile@2x.jpg') no-repeat center / cover;
+      }
   }
 }
 
