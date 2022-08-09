@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-  <link rel="stylesheet" href="css/style.min.css">
-  <title>Акватерапия RitmStyle</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel= "dns-prefetch" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel= "dns-prefetch" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="img/entry-section-background-mobile.jpg" as="image" crossorigin="anonymous">
+    <link rel="preload" href="img/entry-img.jpg" as="image" crossorigin="anonymous">
+    <link rel="preload" href="img/entry-img@2x.jpg" as="image" crossorigin="anonymous">
+    <link rel="preload" href="img/entry-img-tablet.jpg" as="image" crossorigin="anonymous">
+    <link rel="preload" href="img/entry-img-tablet@2x.jpg" as="image" crossorigin="anonymous">
+    <link rel="preload" href="img/entry-img-mobile.jpg" as="image" crossorigin="anonymous">
+    <link rel="preload" href="img/entry-img-mobile@2x.jpg" as="image" crossorigin="anonymous">
+    <title>Акватерапия RitmStyle</title>
+  </head>
 <body>
   <header class="main-header ">
     <nav class="main-nav">
       <div class="main-nav__container main-nav__container--nojs main-nav__container--closed main-nav__container--border-bottom">
         <a class="main-nav__link-logo" href="index.html">
           <picture>
-            <img class="main-nav__logo" src="img/logo.svg" height="60" width="60" alt="Логотип">
+            <img class="main-nav__logo" src="img/logo.svg" height="60" width="60" alt="Логотип" loading="lazy">
           </picture>
         </a>
         <ul class="main-nav__site-list site-list">
@@ -56,7 +66,10 @@
         <h1 class="blog-section__title title">Блог</h1>
         <div class="blog-section__card-blog blog-card">
           <picture>
-            <img class="blog-card__img" src="img/blog-img.jpg" alt="девушка на фоне моря" width="564" height="430">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/blog-img.webp 1x , img/blog-img@2x.webp 2x">
+            <source type="image/webp" srcset="img/blog-img-mobile.webp 1x , img/blog-img-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/blog-img.jpg 1x , img/blog-img@2x.jpg 2x">
+            <img class="blog-card__img" src="img/blog-img-mobile.jpg" srcset="img/blog-img-mobile@2x.jpg 2x" alt="девушка на фоне моря" width="564" height="430" loading="lazy">
           </picture>
           <div class="blog-card__content">
             <time class="blog-card__time time" datetime="2022-02-13">13.02.2022</time>
@@ -67,7 +80,10 @@
         </div>
         <div class="blog-section__card-blog blog-card">
           <picture>
-            <img class="blog-card__img" src="img/blog-img.jpg" alt="девушка на фоне моря" width="564" height="430">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/blog-img.webp 1x , img/blog-img@2x.webp 2x">
+            <source type="image/webp" srcset="img/blog-img-mobile.webp 1x , img/blog-img-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/blog-img.jpg 1x , img/blog-img@2x.jpg 2x">
+            <img class="blog-card__img" src="img/blog-img-mobile.jpg" srcset="img/blog-img-mobile@2x.jpg 2x" alt="девушка на фоне моря" width="564" height="430" loading="lazy">
           </picture>
           <div class="blog-card__content">
             <time class="blog-card__time time" datetime="2022-02-13">13.02.2022</time>
@@ -86,6 +102,7 @@
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
