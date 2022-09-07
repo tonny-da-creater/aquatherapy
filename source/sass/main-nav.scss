@@ -87,31 +87,6 @@
     overflow: auto;
   }
 
-  .main-nav__container--nojs .main-nav__site-list {
-    position: static;
-  }
-
-  .main-nav__container--nojs {
-    grid-template-columns: min-content auto min-content;
-    grid-template-rows: auto auto;
-    padding: 0;
-    grid-column-gap: 0;
-  }
-
-  .main-nav__container--nojs .main-nav__burger-menu {
-    display: none;
-  }
-
-  .main-nav__container--nojs .main-nav__site-list {
-    grid-row: 2 / 3;
-    grid-column: 1 / -1;
-  }
-
-  .main-nav__container--nojs .main-nav__link-logo {
-    padding: 30px;
-    grid-column: 1 / 2;
-  }
-
   .main-nav__container--closed .main-nav__site-list {
     top: -100%;
   }
