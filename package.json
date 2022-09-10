@@ -23,12 +23,12 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp",
-    "deploy": "gh-pages - d build"
+    "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",
