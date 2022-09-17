@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   justify-self: center;
   min-width: 320px;
+  flex: 1 1 auto;
 
   @media all and (max-width: $mobile) {
     flex-wrap: nowrap;
@@ -64,7 +65,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 auto;
   }
 }
 

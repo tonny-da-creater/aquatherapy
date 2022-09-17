@@ -23,12 +23,10 @@ $(".carousel").slick({
     }
   ]
 });
+
 // настройки для слайдера - конец
 
-// состояние меню при отключённом js - начало
 let navMainContainer = document.querySelector('.main-nav__container');
-navMainContainer.classList.remove('main-nav__container--nojs');
-// состояние меню при отключённом js - конец
 
 // скрипт для переключения бургер меню и блокирования контента при открытом состоянии - начало
 let navToggle = document.querySelector('.main-nav__burger-menu');
