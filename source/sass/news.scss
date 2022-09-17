@@ -14,8 +14,10 @@
   text-align: left;
   min-height: 258px;
   box-sizing: border-box;
-  background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/woman-under-water.jpg') no-repeat center / cover;
+  background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/woman-under-water.jpg') no-repeat center;
+  background-size: 100%;
   border-radius: 10px;
+  transition: all 0.5s ease;
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/woman-under-water@2x.jpg') no-repeat center / cover;
@@ -29,6 +31,11 @@
       background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5)), url('../img/woman-under-water-mobile@2x.jpg') no-repeat center / cover;
     }
   }
+}
+
+.news__item:hover {
+  background-size: 150%;
+  // transition: all 0.5s linear;
 }
 
 .news__time {

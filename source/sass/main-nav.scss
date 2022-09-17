@@ -67,6 +67,15 @@
   }
 }
 
+.main-nav__btn {
+  transition: background-color 0.2s ease;
+}
+
+.main-nav__btn:hover {
+  background-color: #00b9ff;
+
+}
+
 .main-nav__burger-menu {
   margin-left: auto;
 }
@@ -75,10 +84,9 @@
   .main-nav__site-list {
     position: fixed;
     top: 80px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     text-align: left;
-    background: #306a6a;
     z-index: 1;
     flex-direction: column;
     align-items: center;
