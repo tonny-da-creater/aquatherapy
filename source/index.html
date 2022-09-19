@@ -21,13 +21,13 @@
 </head>
 <body>
   <header class="main-header">
-    <nav class="main-nav">
-      <div class="main-nav__container main-nav__container--closed">
-        <a class="main-nav__link-logo" href="index.html">
-          <picture>
-            <img class="main-nav__logo" src="img/logo.svg" height="60" width="60" alt="Логотип" loading="lazy">
-          </picture>
-        </a>
+    <div class="main-header__container">
+      <a class="main-header__link-logo" href="index.html">
+        <picture>
+          <img class="main-header__logo" src="img/logo.svg" height="60" width="60" alt="Логотип" loading="lazy">
+        </picture>
+      </a>
+      <nav class="main-header__main-nav main-nav main-nav--closed">
         <ul class="main-nav__site-list site-list">
           <li class="site-list__item">
             <a href="index.html" class="site-list__link">Главная</a>
@@ -51,22 +51,20 @@
             <a href="#" class="site-list__btn btn btn--primary">Записаться на сеанс</a>
           </li>
         </ul>
-        <a href="#" class="main-nav__btn btn btn--primary">Записаться на сеанс</a>
-        <div class="main-nav__burger-menu burger-menu">
-          <span class="burger-menu__item"></span>
-          <span class="burger-menu__item"></span>
-          <span class="burger-menu__item"></span>
-        </div>
+      </nav>
+      <div class="main-nav__burger-menu burger-menu">
+        <span class="burger-menu__item"></span>
       </div>
-    </nav>
-    <div class="main-header__bg-hero bg-hero">
-      <div class="bg-hero__container">
-        <h2 class="main-header__title bg-hero__title">Укрепление здоровья</h2>
-        <h1 class="main-header__main-title bg-hero__main-title">Акватерапия <br> RitmStyle</h1>
-      </div>
+      <a href="#" class="main-nav__btn btn btn--primary">Записаться на сеанс</a>
     </div>
   </header>
   <main class="main-content">
+    <section class="bg-hero">
+      <div class="bg-hero__container">
+        <h2 class="bg-hero__title">Укрепление здоровья</h2>
+        <h1 class="bg-hero__main-title">Акватерапия <br> RitmStyle</h1>
+      </div>
+    </section>
     <section class="sessions">
       <div class="sessions__container">
         <h2 class="sessions__title title">Сеансы RitmStyle</h2>

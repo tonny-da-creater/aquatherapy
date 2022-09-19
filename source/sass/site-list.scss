@@ -5,12 +5,11 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-self: center;
-  min-width: 320px;
-  flex: 1 1 auto;
 
   @media all and (max-width: $mobile) {
     flex-wrap: nowrap;
+    flex-direction: column;
+    padding-bottom: 94px;
   }
 }
 
@@ -45,6 +44,7 @@
     font-size: 25px;
     padding: 35px 0;
     background: #306a6a;
+    display: block;
 
     &:hover {
       color: $white-color;
@@ -57,7 +57,6 @@
   display: none;
 
   @media all and (max-width: $mobile) {
-    display: block;
     border-top: 1px solid gray;
     padding: 40px 0;
     width: 100%;

@@ -1,110 +1,28 @@
 .main-nav {
-  padding: 0 30px;
+  justify-self: center;
+
 
   @media all and (max-width: $mobile) {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: auto;
-    z-index: 2;
-    padding: 0;
+    height: 100%;
+    max-height: 100%;
+    background: #306a6a;
+    overflow: auto;
+    transition: max-height 0.5s ease;
   }
 }
 
 @media all and (max-width: $mobile) {
-
-  .main-nav::before {
-    background-color: $black-color;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
+  .main-nav--closed {
+    max-height: 0;
+    transition: max-height 0.5s ease;
   }
-}
-
-.main-nav__container {
-  margin: 0 auto;
-  max-width: 1296px;
-  padding: 30px 0;
-  display: grid;
-  grid-template-columns: min-content auto min-content;
-  align-items: center;
-  grid-column-gap: 50px;
-
-  @media all and (max-width: $mobile) {
-    grid-template-columns: min-content auto;
-    padding: 10px 30px;
-  }
-}
-
-.main-nav__container--border-bottom {
-  border-bottom: 1px solid $white-color-opacity;
-
-  @media all and (max-width: $mobile) {
-    border-bottom: 0;
-  }
-}
-
-.main-nav__link-logo {
-  height: auto;
-  width: 60px;
-  position: relative;
-  z-index: 2;
-}
-
-.main-nav__logo {
-  height: auto;
-
-  @media all and (max-width: $mobile) {
-    width: 45px;
-  }
-}
-
-.main-nav--border-bottom {
-  border-bottom: 1px solid $white-color-opacity;
-  padding: 30px 0;
 }
 
 @media all and (max-width: $mobile) {
   .main-nav__btn {
     display: none;
-  }
-}
-
-.main-nav__btn {
-  transition: background-color 0.2s ease;
-}
-
-.main-nav__btn:hover {
-  background-color: #00b9ff;
-
-}
-
-.main-nav__burger-menu {
-  margin-left: auto;
-}
-
-@media all and (max-width: $mobile) {
-  .main-nav__site-list {
-    position: fixed;
-    top: 69px;
-    height: 100vh;
-    width: 100%;
-    text-align: left;
-    z-index: 1;
-    flex-direction: column;
-    align-items: center;
-    transition: top 1s ease;
-    max-height: calc(100vh - 69px);
-    overflow: auto;
-  }
-
-  .main-nav__container--closed .main-nav__site-list {
-    top: -100%;
   }
 }
 

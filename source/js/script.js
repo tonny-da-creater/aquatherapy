@@ -26,20 +26,19 @@ $(".carousel").slick({
 
 // настройки для слайдера - конец
 
-let navMainContainer = document.querySelector('.main-nav__container');
-
 // скрипт для переключения бургер меню и блокирования контента при открытом состоянии - начало
-let navToggle = document.querySelector('.main-nav__burger-menu');
+let navToggle = document.querySelector('.burger-menu');
 let body = document.querySelector('body');
+let nav = document.querySelector('.main-nav');
 
 navToggle.addEventListener('click', function () {
-  if (navMainContainer.classList.contains('main-nav__container--closed')) {
-    navMainContainer.classList.remove('main-nav__container--closed');
-    navMainContainer.classList.add('main-nav__container--opened');
+  if (nav.classList.contains('main-nav--closed')) {
+    nav.classList.remove('main-nav--closed');
+    this.classList.add('burger-menu--open');
     body.classList.add('lock');
   } else {
-    navMainContainer.classList.add('main-nav__container--closed');
-    navMainContainer.classList.remove('main-nav__container--opened');
+    nav.classList.add('main-nav--closed');
+    this.classList.remove('burger-menu--open');
     body.classList.remove('lock');
   }
 });

@@ -1,0 +1,40 @@
+@media all and (max-width: $mobile) {
+  .main-header {
+    background-color: $black-color;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+  }
+}
+
+
+.main-header__container {
+  margin: 0 auto;
+  max-width: 1296px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+  align-items: center;
+  grid-column-gap: 50px;
+
+  @media all and (max-width: $mobile) {
+    display: block;
+    padding: 0;
+  }
+}
+
+.main-header__link-logo {
+  display: inline-block;
+  width: 60px;
+
+  @media all and (max-width: $mobile) {
+    width: 45px;
+    padding: 20px;
+  }
+}
+
+.main-header__logo {
+  max-width: 100%;
+  height: auto;
+}
